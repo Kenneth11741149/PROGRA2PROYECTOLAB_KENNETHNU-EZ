@@ -25,27 +25,7 @@ public class GUI extends javax.swing.JFrame {
      */
     public GUI() {
         initComponents();
-        prohibited1.add(",");
-        prohibited1.add(".");
-        prohibited1.add(" ");
-        prohibited1.add("?");
-        prohibited1.add("!");
-        prohibited1.add("¡");
-        prohibited1.add("¿");
-        prohibited1.add("'");
-        prohibited1.add(";");
-        prohibited1.add(":");
-        prohibited1.add("#");
-        prohibited1.add("$");
-        prohibited1.add("*");
-        prohibited1.add("-");
-        prohibited1.add("|");
-
-        String[] divider = "for|if|it|the|else|what|was|from|to|in|as|and|but|or|at|why|this|on|to|a|is|with".split("|");
-        for (int i = 0; i < divider.length; i++) {
-            prohibited2.add(divider[i]);
-
-        }
+        JOptionPane.showMessageDialog(this, "Alerta: el programa podria tardar un rato o 2 con archivos muy grandes.");
     }
 
     /**
